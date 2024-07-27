@@ -1,14 +1,21 @@
+# Restaurants
 
-
-## Getting Started
-
-Run the development server:
+## Desarrollo
 
 ```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+[http://localhost:3000](http://localhost:3000)
 
 ---
 [From](https://github.com/goncy/nextjs-course)
+
+## Producción
+
+```bash
+npm run build
+```
+```bash
+npm start
+```

@@ -41,3 +41,11 @@ export async function generateMetadata({ params: { id } }: { params: { id: strin
     description: restaurant.description,
   }
 }
+
+export async function generateStaticParams() {
+  const restaurants = await api.list()
+ 
+  return restaurants.map((restaurant) => ({
+    id: restaurant.id,
+  }))
+}

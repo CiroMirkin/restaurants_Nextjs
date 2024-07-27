@@ -7,7 +7,7 @@ export default async function HomePage() {
   const restaurants = restaurantsData.map((restaurant) => {
     return (
       <article key={restaurant.id}>
-        <Link href={`/${restaurant.id}`} key={restaurant.id}>
+        <Link href={`/${restaurant.id}`} prefetch={false} key={restaurant.id}>
           <img
             alt={restaurant.name}
             className="mb-3 h-[300px] w-full object-cover"
